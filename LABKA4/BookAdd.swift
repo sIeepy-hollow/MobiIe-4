@@ -1,14 +1,14 @@
 //
-//  AddingViewController.swift
-//  MD Lab 4
+//  BookAdd.swift
+//  LABKA4
 //
-//  Created by Павел on 22.05.2021.
+//  Created by Aplyn on 23.05.2021.
 //
 
 import Foundation
 import UIKit
 
-class AddingViewController: UIViewController {
+class BookAdd: UIViewController {
     
     
     @IBOutlet weak var errorLabel: UILabel!

@@ -1,19 +1,34 @@
 //
-//  UnderclassMyUIView.swift
-//  LABKA3
+//  Book.swift
+//  LABKA4
 //
-//  Created by Aplyn on 04.05.2021.
+//  Created by Aplyn on 23.05.2021.
 //
 
+import Foundation
 
+struct Book: Codable {
+    var title: String
+    var subtitle: String
+    var authors: String?
+    var publisher: String?
+    var isbn13: String
+    var pages: String?
+    var year: String?
+    var rating: String?
+    var desc: String?
+    var price: String
+    var image: String
+    
+    init(title: String, subtitle: String, price: String) {
+        self.title = title
+        self.subtitle = subtitle
+        self.price = price
+        self.image = ""
+        self.isbn13 = String(arc4random())
+    }
+}
 
 struct Books: Codable {
-    struct Book: Codable {
-        var title: String
-        var subtitle: String
-        var isbn13: String
-        var price: String
-        var image: String
-    }
     var books: [Book]
 }
